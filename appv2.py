@@ -16,7 +16,7 @@ st.write("Upload or capture an image to detect chili ripeness.")
 @st.cache_resource
 def load_model():
     # 👇 Replace with your trained model path (e.g., 'runs/detect/train/weights/best.pt')
-    model_path = "yolo_mobile_exports/best.pt"
+    model_path = "best.pt"
     return YOLO(model_path)
 
 model = load_model()
